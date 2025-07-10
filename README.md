@@ -58,7 +58,7 @@ http://localhost:6688/docs
 </div>
 
 ```
-https://www.bilibili.com/video/BV1nc7Xz5E2A
+https://www.bilibili.com/video/BV1xYGgz9ENE
 ```
 # 🐧 QQ交流群
 
