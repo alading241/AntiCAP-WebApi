@@ -13,7 +13,7 @@ from fastapi.staticfiles import StaticFiles
 
 SECRET_KEY = None
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 1*60*24*60  # 60天
+ACCESS_TOKEN_EXPIRE_MINUTES = 1*60*24* 60  # 60天
 VALID_USERNAME = None
 VALID_PASSWORD = None
 
@@ -174,10 +174,10 @@ if __name__ == '__main__':
 |         Author: 81NewArk                                |
 -----------------------------------------------------------''')
 
-    VALID_USERNAME = input("Please enter username: ")
-
-    VALID_PASSWORD = input("Please enter password: ")
 
     SECRET_KEY = os.urandom(32).hex()
+    VALID_USERNAME = input("Please enter username: ")
+    VALID_PASSWORD = input("Please enter password: ")
+
 
     uvicorn.run(app, host="0.0.0.0", port=6688, access_log=True)
