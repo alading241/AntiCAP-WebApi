@@ -66,7 +66,7 @@ https://www.bilibili.com/video/BV1xYGgz9ENE
 
 <div align="center">
 
-<img src="https://img.picui.cn/free/2025/07/04/6867f1907d1a0.png" alt="QQGroup" width="200" height="200">
+<img src="https://free.picui.cn/free/2025/07/04/6867f1907d1a0.png" alt="QQGroup" width="200" height="200">
 
 </div>
 
@@ -75,8 +75,8 @@ https://www.bilibili.com/video/BV1xYGgz9ENE
 
 <div align="center">
 
-<img src="https://img.picui.cn/free/2025/07/04/6867efd0bd67e.png" alt="Ali" width="200" height="200">
-<img src="https://img.picui.cn/free/2025/07/04/6867efd0d7cbb.png" alt="Wx" width="200" height="200">
+<img src="https://free.picui.cn/free/2025/07/04/6867efd0bd67e.png" alt="Ali" width="200" height="200">
+<img src="https://free.picui.cn/free/2025/07/04/6867efd0d7cbb.png" alt="Wx" width="200" height="200">
 
 </div>
 
