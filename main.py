@@ -164,7 +164,7 @@ async def slider_comparison(data: SliderImageIn, current_user: str = Depends(get
 
 @app.post("/compare/similarity",summary="对比图片相似度",tags=["图片对比"])
 async def compare_similarity(data: CompareImageIn, current_user: str = Depends(get_current_user)):
-    result = Atc.Compare_Similarity(img1_base64=data.img1_base64, img2_base64=data.img2_base64)
+    result = Atc.compare_image_similarity(image1_base64=data.img1_base64, image2_base64=data.img2_base64)
     return {"result": result}
 
 
