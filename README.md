@@ -6,7 +6,7 @@
 
 ## 🌍环境说明
 ```
-python 3.8+
+python 3.10.6
 ```
 
 <div align="center">
