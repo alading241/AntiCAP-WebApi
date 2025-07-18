@@ -53,6 +53,11 @@ class SliderImageIn(BaseModel):
     background_base64:str
 
 
+class CompareImageIn(BaseModel):
+    img1_base64: str
+    img2_base64: str
+
+
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/login")
 Atc = AntiCAP.AntiCAP(show_ad=False)
@@ -156,6 +161,12 @@ async def slider_comparison(data: SliderImageIn, current_user: str = Depends(get
     return {"result": result }
 
 
+@app.post("/compare/similarity",summary="对比图片相似度",tags=["图片对比"])
+async def compare_similarity(data: CompareImageIn, current_user: str = Depends(get_current_user)):
+    result = Atc.Compare_Similarity(img1_base64=data.img1_base64, img2_base64=data.img2_base64)
+    return {"result": result}
+
+
 
 app.mount("/", StaticFiles(directory="static", html=True), name="static")
 
@@ -178,6 +189,8 @@ if __name__ == '__main__':
     SECRET_KEY = os.urandom(32).hex()
     VALID_USERNAME = input("Please enter username: ")
     VALID_PASSWORD = input("Please enter password: ")
+    port_input = input("Please enter port (default: 6688): ")
+    port = int(port_input) if port_input else 6688
 
 
-    uvicorn.run(app, host="0.0.0.0", port=6688, access_log=True)
+    uvicorn.run(app, host="0.0.0.0", port=port, access_log=True)
