@@ -27,7 +27,7 @@ description = """
 """
 
 
-app = FastAPI(title="AntiCAP - WebApi", description=description, version="1.0.3")
+app = FastAPI(title="AntiCAP - WebApi", description=description, version="1.0.4")
 
 
 app.add_middleware(
